@@ -13,6 +13,7 @@ import { useRouter } from 'next/router';
 import  Router  from "next/router";
 import { title } from "process";
 import  YatchDetail  from "./YatchsList.js";
+import {Contact } from "@/components/contactEmail"
 // eslint-disable-next-line import/no-anonymous-default-export
 /*
 const YatchDetail = [{
@@ -66,7 +67,7 @@ export default function () {
                  <ActionAreaCard {...obj}/>
               </a>
             ))}
-
+       <Contact></Contact>
       </div>
     ) 
   }

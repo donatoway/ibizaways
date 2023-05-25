@@ -12,5 +12,6 @@ const YatchDetail = [{
           "/Sundacer320/info/Sundacer320Info2.png",
           "/Sundacer320/info/Sundacer320Info3.png",
           "/Sundacer320/info/Sundacer320Info4.png"]
-  }]
+  }
+]
   export default YatchDetail;
