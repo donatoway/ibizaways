@@ -5,11 +5,16 @@ import { top } from '@popperjs/core'
 const Slider = () =>
 {
     const slides = [
-    {url: '/yatch2.png', title: 'image1'},
-    {url: '/hand-yatch.jpg', title: 'image2'},
-    {url: '/yatch2.png', title: 'image3'},
-    {url: '/hand-yatch.jpg', title: 'image4'},
-    {url: '/yatch2.png', title: 'image5'}
+    {url: '/BaiaItalia/baia-italia_1.png', title: 'image1'},
+    {url: '/Canados42/Canados42_2.png', title: 'image2'},
+    {url: '/Canados90/Canados90_1.png', title: 'image3'},
+    {url: '/Cayman/Cayman.png', title: 'image4'},
+    {url: '/Leopard/Leopard_1.png', title: 'image5'},
+    {url: '/QuickSilver875/quick-silver875_1.png', title: 'image6'},
+    {url: '/Sundacer320/Sundacer320.jpg', title: 'image7'},
+    {url: '/SunseekerPredator/sunseeker_1.png', title: 'image8'},
+    {url: '/VanDutch/van-dutch_1.png', title: 'image9'},
+
     ]
 
     const containerStyles = {

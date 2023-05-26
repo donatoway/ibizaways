@@ -43,7 +43,11 @@ export default function Home() {
                 textAlign: "center",
                 color:"white",}}>
               Yatchs
+              <div >
+                <a onClick={() => router.push(`Yatchs/Yatchs-index`)}>
                 <Slider />
+                </a>
+                </div>
               Boat Trips
                 <Slider />
               Boat Party

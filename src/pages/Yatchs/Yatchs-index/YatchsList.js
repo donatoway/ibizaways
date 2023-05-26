@@ -104,6 +104,96 @@ const YatchDetail = [{
       "/VanDutch/van-dutch_4.png"],
     info: [  "/VanDutch/van-dutchInfo.png", "/hoursInfo.png"
           ]
+  },
+  {
+    name: "42 Canados Bandido",
+    description: "",
+    picture:"/Canados42/Canados42.png",
+    images: [
+      "/Canados42/Canados42.png",
+      "/Canados42/Canados42_2.png",
+      "/Canados42/Canados42_3.png",
+      "/Canados42/Canados42_4.png",
+      "/Canados42/Canados42_5.png",],
+    info: [ "/Canados42/Canados42Info.png", "/hoursInfo.png"
+          ]
+  },
+  {
+    name: "v58 Princess",
+    description: "",
+    picture:"/v58Princess/v58princess.png",
+    images: [
+      "/v58Princess/v58princess_2.png",
+      "/v58Princess/v58princess_3.png",
+      "/v58Princess/v58princess_4.png",
+      "/v58Princess/v58princess_5.png",
+      "/v58Princess/v58princess_6.png",],
+    info: [ "/v58Princess/v58princessInfo.png",, "/hoursInfo.png"
+          ]
+  },
+  {
+    name: "68 SUNSEEKER PREDATOR CHARLIE FOX",
+    description: "",
+    picture:"/SunseekerPredator/sunseeker_1.png",
+    images: [
+      "/SunseekerPredator/sunseeker_2.png",
+      "/SunseekerPredator/sunseeker_3.png",
+      "/SunseekerPredator/sunseeker_4.png",
+      "/SunseekerPredator/sunseeker_5.png",],
+    info: [ "/SunseekerPredator/sunseekerInfo.png", "/hoursInfo.png"
+          ]
+  },
+  {
+    name: "7O BAIA ITALIA CHILLI",
+    description: "",
+    picture:"/BaiaItalia/baia-italia_1.png",
+    images: [
+      "/BaiaItalia/baia-italia_2.png",
+      "/BaiaItalia/baia-italia_3.png",
+      "/BaiaItalia/baia-italia_4.png",
+      "/BaiaItalia/baia-italia_5.png",],
+    info: [ "/BaiaItalia/baia-italiaInfo.png", "/hoursInfo.png"
+          ]
+  },
+  {
+    name: "CANADOS 90",
+    description: "",
+    picture:"/Canados90/Canados90_1.png",
+    images: [
+      "/Canados90/Canados90_1.png",
+      "/Canados90/Canados90_2.png",
+      "/Canados90/Canados90_3.png",
+      "/Canados90/Canados90_4.png",
+      "/Canados90/Canados90_5.png",],
+    info: [ "/Canados90/Canados90Info.png", "/hoursInfo.png"
+          ]
+  },
+  {
+    name: "90 LEOPARD 27 AYA",
+    description: "",
+    picture:"/Leopard/Leopard_1.png",
+    images: [
+      "/Leopard/Leopard_1.png",
+      "/Leopard/Leopard_2.png",
+      "/Leopard/Leopard_3.png",
+      "/Leopard/Leopard_4.png",
+      "/Leopard/Leopard_5.png",
+      "/Leopard/Leopard_6.png",],
+    info: [ "/Leopard/LeopardInfo.png","/hoursInfo.png"
+          ]
+  },
+  {
+    name: "SUNSEEKER PREDATOR 102",
+    description: "",
+    picture:"/Sunseeker102/Sunseeker102_1.png",
+    images: [
+      "/Sunseeker102/Sunseeker102_1.png",
+      "/Sunseeker102/Sunseeker102_2.png",
+      "/Sunseeker102/Sunseeker102_3.png",
+      "/Sunseeker102/Sunseeker102_4.png",
+      "/Sunseeker102/Sunseeker102_5.png"],
+    info: [ "/Sunseeker102/Sunseeker102Info.png","/hoursInfo.png"
+          ]
   }
 ]
   export default YatchDetail;
