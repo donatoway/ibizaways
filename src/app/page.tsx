@@ -48,7 +48,7 @@ export default function Home() {
                 <Slider />
                 </a>
                 </div>
-              Boat Trips
+              Excursion
                 <Slider />
               Boat Party
                 <Slider />

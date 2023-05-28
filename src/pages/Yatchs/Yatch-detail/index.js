@@ -10,6 +10,8 @@ import {CarouselFun} from "@/components/Carousel"
 import {Contact} from "@/components/contactEmail"
 // eslint-disable-next-line import/no-anonymous-default-export
 
+
+
 export default function () {
     const router = useRouter()
 
@@ -56,10 +58,3 @@ export default function () {
       </div>
     ) 
   }
-  /*
- CREARE UNA SCHEDA PRODOTTO
-        IMMAGINE PRINCIPALE
-        sotto un listato di immagini
-        A SINISTRA LA SCHEDA TECNICA
-        SOTTO FORM DA COMPLETARE PER RICHIEDERE INFORMAZIONI
-  */

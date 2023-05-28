@@ -17,7 +17,7 @@ import { createContext } from 'react'
 import { useRouter } from 'next/navigation';
 import { BorderBottom, Margin } from '@mui/icons-material';
 
-const pages = ['Events', 'Yatchs', 'Boat Party', 'Supercars'];
+const pages = ['Yatchs', 'Boat Party', 'Excursions'];
 
 function ResponsiveAppBar() {
   const router = useRouter();
@@ -94,7 +94,7 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page} onClick={() => router.push(`/${page}/Yatchs-index`)}>
+                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page} onClick={() => router.push(`/${page}/${page}-index`)}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -123,7 +123,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={() => router.push(`/${page}/Yatchs-index`)}
+                onClick={() => router.push(`/${page}/${page}-index`)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}

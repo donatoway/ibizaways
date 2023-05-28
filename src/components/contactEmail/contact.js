@@ -25,7 +25,7 @@ const Contact = () =>
       };
     return (
        sent != false &&  
-            <form ref={form}  onSubmit={sendEmail}  style={{ display:"grid", margin:"50px", marginTop:"100px", textAlign:"center"}}>
+            <form ref={form}  onSubmit={sendEmail}  style={{ display:"grid", margin:"40px", marginLeft:"35px", marginRight:"30px", marginTop:"100px", textAlign:"center"}}>
             <h2>Contact Us</h2>
             <h3>name</h3>
              <TextField
@@ -57,7 +57,7 @@ const Contact = () =>
             <textarea name="message" style={{width:"100%", height:"150px"}}/>
             
             
-            <Button type="submit"  style={{margin:"20px", marginLeft:"40px", width:"180px", height:"40px", }} variant="contained">
+            <Button type="submit"  style={{margin:"20px", marginLeft:"50px",width:"180px", height:"40px", display:"inline-flex" }} variant="contained">
                 Send
             </Button>
             </form>
