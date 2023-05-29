@@ -8,7 +8,7 @@ import jetskiList from "../Excursions-jetski/jetskiList";
 /* eslint-disable import/no-anonymous-default-export */
 
 const jetski = {name: "JETSKI TOUR", picture: "/Jetski/jetski-conta/jetskiConta0.png"}
-
+const  boatNoLicence = {name :"BOAT NO LICENCE", picture: "/Boat-no-licence/Astec/Astec400.png"}
 
 export default function  ()
 {
@@ -20,7 +20,11 @@ export default function  ()
             <a onClick={() => router.push("/Excursions/Excursions-jetski")}>
                 <ActionAreaCard {...jetski}/>
             </a>
-        </div> 
+            <a onClick={() => router.push("/Excursions/Excursions-boat-no-licence")}>
+                <ActionAreaCard {...boatNoLicence}/>
+            </a>
+        </div>
+
 
     )
 }
