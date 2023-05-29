@@ -9,7 +9,7 @@ import jetskiList from "../Excursions-jetski/jetskiList";
 
 const jetski = {name: "JETSKI TOUR", picture: "/Jetski/jetski-conta/jetskiConta0.png"}
 const  boatNoLicence = {name :"BOAT NO LICENCE", picture: "/Boat-no-licence/Astec/Astec400.png"}
-
+const snorkeling = {name : "SNORKELING EXCURSIONS", picture: "/snorkeling/snorkeling1.png" }
 export default function  ()
 {
     const router = useRouter()
@@ -20,8 +20,13 @@ export default function  ()
             <a onClick={() => router.push("/Excursions/Excursions-jetski")}>
                 <ActionAreaCard {...jetski}/>
             </a>
+
             <a onClick={() => router.push("/Excursions/Excursions-boat-no-licence")}>
                 <ActionAreaCard {...boatNoLicence}/>
+            </a>
+
+            <a onClick={() => router.push("/Excursions/Excursions-snorkeling")}>
+                <ActionAreaCard {...snorkeling}/>
             </a>
         </div>
 

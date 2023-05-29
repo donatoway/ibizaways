@@ -18,6 +18,31 @@ import { Typewriters } from '@/components/animations'
 import { FaInstagramSquare } from "@react-icons/all-files/fa/FaInstagramSquare";
 import { Router } from 'next/router'
 import { Social } from '@/components/Social'
+import jetskiList from "../pages/Excursions/Excursions-jetski/jetskiList";
+
+const slides = [
+  {url: '/BaiaItalia/baia-italia_1.png', title: 'image1'},
+  {url: '/Canados42/Canados42_2.png', title: 'image2'},
+  {url: '/Canados90/Canados90_1.png', title: 'image3'},
+  {url: '/Cayman/Cayman.png', title: 'image4'},
+  {url: '/Leopard/Leopard_1.png', title: 'image5'},
+  {url: '/QuickSilver875/quick-silver875_1.png', title: 'image6'},
+  {url: '/Sundacer320/Sundacer320.jpg', title: 'image7'},
+  {url: '/SunseekerPredator/sunseeker_1.png', title: 'image8'},
+  {url: '/VanDutch/van-dutch_1.png', title: 'image9'},
+  ]
+
+  const slides2 = [
+    {url: '/snorkeling/snorkeling1.png', title: 'image1'},
+    {url: '/Jetski/jetski-cala-conta/jetskiConta0.png', title: 'image2'},
+    {url: '/Jetski/jetski-puerta/jetski-puerta.png', title: 'image3'},
+    {url: '/Boat-no-licence/Dipol/Dipol.png', title: 'image4'},
+    {url: '/Boat-no-licence/Dipol/Dipol2.png', title: 'image5'},
+    {url: '/Jetski/jetski-atlantis/jetski-atlantis.png', title: 'image6'},
+    {url: '/Boat-no-licence/Astec/Astec400.png', title: 'image7'},
+    {url: '/snorkeling/snorkeling2.png', title: 'image8'},
+    {url: '/snorkeling/snorkeling7.png', title: 'image9'},
+    ]
 
 export default function Home() {
   const router = useRouter();
@@ -45,13 +70,13 @@ export default function Home() {
               Yatchs
               <div >
                 <a onClick={() => router.push(`Yatchs/Yatchs-index`)}>
-                <Slider />
+                <Slider  slides={slides}/>
                 </a>
-                </div>
+              </div>
               Excursion
-                <Slider />
+                <Slider slides={slides2}/>
               Boat Party
-                <Slider />
+                <Slider slides={slides}/>
               <Social />
           </div>
         </div>
