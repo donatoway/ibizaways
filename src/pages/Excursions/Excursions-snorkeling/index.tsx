@@ -5,6 +5,7 @@ import { useRouter } from "next/router"
 import {ResponsiveAppBar} from "@/components/app-bar/"
 import { Contact } from "@/components/contactEmail";
 import { List } from "@mui/material";
+import { Whatsapp } from "@/components/whatsapp";
 
 const snorkDetail = 
     {
@@ -58,6 +59,7 @@ export default function ()
             <div>
                 <Contact></Contact>
             </div>
+            <Whatsapp></Whatsapp>
         </div>
     )
 }

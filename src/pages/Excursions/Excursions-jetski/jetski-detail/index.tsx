@@ -4,7 +4,7 @@ import CarouselFun from "@/components/Carousel/carousel";
 import { useRouter } from "next/router"
 import {ResponsiveAppBar} from "@/components/app-bar/"
 import { Contact } from "@/components/contactEmail";
-
+import {Whatsapp} from "@/components/whatsapp"
 export default function ()
 {
     const router = useRouter();
@@ -36,6 +36,7 @@ export default function ()
             <div>
                 <Contact></Contact>
             </div>
+            <Whatsapp></Whatsapp>
         </div>
     )
 }

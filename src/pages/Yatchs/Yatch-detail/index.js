@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { useRouter } from "next/router";
 import {CarouselFun} from "@/components/Carousel"
 import {Contact} from "@/components/contactEmail"
+import {Whatsapp} from "@/components/whatsapp"
 // eslint-disable-next-line import/no-anonymous-default-export
 
 
@@ -54,6 +55,7 @@ export default function () {
             </div>
           ))
         }
+        <Whatsapp></Whatsapp>
       <Contact></Contact>
       </div>
     ) 

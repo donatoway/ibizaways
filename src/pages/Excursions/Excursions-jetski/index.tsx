@@ -8,6 +8,7 @@ import { Card } from "@mui/material";
 import { useRouter } from "next/router";
 import  Router  from "next/router";
 import jetskiList from "./jetskiList";
+import {Whatsapp} from "@/components/whatsapp"
 /* eslint-disable import/no-anonymous-default-export */
 
 function sendProp (obj:any)
@@ -36,6 +37,7 @@ export default function ()
                  <ActionAreaCard {...obj}/>
               </a>
             ))}
+            <Whatsapp></Whatsapp>
         </div>
     )
 } 

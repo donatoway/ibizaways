@@ -14,6 +14,7 @@ import  Router  from "next/router";
 import { title } from "process";
 import  YatchDetail  from "./YatchsList.js";
 import {Contact } from "@/components/contactEmail"
+import {Whatsapp} from "@/components/whatsapp"
 // eslint-disable-next-line import/no-anonymous-default-export
 /*
 const YatchDetail = [{
@@ -67,6 +68,7 @@ export default function () {
                  <ActionAreaCard {...obj}/>
               </a>
             ))}
+        <Whatsapp></Whatsapp>
        <Contact></Contact>
       </div>
     ) 

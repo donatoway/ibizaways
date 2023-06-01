@@ -5,6 +5,7 @@ import ActionAreaCard from "@/components/Card/CardClick";
 import { ResponsiveAppBar } from "@/components/app-bar";
 import { Router, useRouter } from "next/router";
 import jetskiList from "../Excursions-jetski/jetskiList";
+import {Whatsapp} from "@/components/whatsapp"
 /* eslint-disable import/no-anonymous-default-export */
 
 const jetski = {name: "JETSKI TOUR", picture: "/Jetski/jetski-conta/jetskiConta0.png"}
@@ -28,6 +29,7 @@ export default function  ()
             <a onClick={() => router.push("/Excursions/Excursions-snorkeling")}>
                 <ActionAreaCard {...snorkeling}/>
             </a>
+            <Whatsapp></Whatsapp>
         </div>
 
 

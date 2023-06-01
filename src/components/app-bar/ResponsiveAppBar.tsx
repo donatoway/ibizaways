@@ -1,3 +1,4 @@
+
 'use client'
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
@@ -13,11 +14,13 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Image from 'next/image'
 import { createContext } from 'react'
 import { useRouter } from 'next/navigation';
 import { BorderBottom, Margin } from '@mui/icons-material';
+import Icon from '@mui/material/Icon';
 
-const pages = ['Yatchs', 'Boat Party', 'Excursions'];
+const pages = [{name:'Yatchs', link: 'Yatchs'}, {name:'Sunset Trip', link: 'SunsetTrip'}, {name:'Excursions', link: 'Excursions'}];
 
 function ResponsiveAppBar() {
   const router = useRouter();
@@ -45,7 +48,14 @@ function ResponsiveAppBar() {
     }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Image 
+                alt="insta"
+                src="/ibizaways3.PNG"
+                width={80}
+                height={30}
+                style={{margin:"6px", display:"flex"}}
+                onClick={() => router.push("/")}
+                />
           <Typography
             variant="h6"
             noWrap
@@ -61,7 +71,6 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
           </Typography>
 
           <Box sx={{flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -94,13 +103,13 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page} onClick={() => router.push(`/${page}/${page}-index`)}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page.link} onClick={() => router.push(`/${page.link}/${page.link}-index`)}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+         { /*<AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />*/}
           <Typography
             variant="h5"
             noWrap
@@ -117,16 +126,16 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={() => router.push(`/${page}/${page}-index`)}
+                key={page.link}
+                onClick={() => router.push(`/${page.link}/${page.link}-index`)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>

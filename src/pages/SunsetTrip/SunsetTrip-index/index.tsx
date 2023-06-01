@@ -9,7 +9,7 @@ import { ResponsiveAppBar } from "@/components/app-bar";
 import { Card } from "@mui/material";
 import { useRouter } from "next/router";
 import  Router  from "next/router";
-import boatNoLicence from "./boat-no-licence";
+import sunsetList from "../sunsetList";
 import { Whatsapp } from "@/components/whatsapp";
 /* eslint-disable import/no-anonymous-default-export */
 
@@ -17,16 +17,14 @@ import { Whatsapp } from "@/components/whatsapp";
 function sendProp (obj:any)
 {
   Router.push({
-    pathname: `/Excursions/Excursions-boat-no-licence/boat-detail`,
+    pathname: `/SunsetTrip/SunsetTripDetail`,
     query: {
       name: obj.name,
       description: obj.description,
       picture: obj.picture,
       images: obj.images,
-      halfDay: obj.halfDay,
-      fullDay: obj.fullDay,
-      halfDay_hours: obj.halfDay_hours,
-      fullDay_hours: obj.fullDay_hours
+      price: obj.price,
+      listDescription: obj.listDescription
     }
   })
 }
@@ -37,7 +35,7 @@ export default function ()
     return (
         <div>
             <ResponsiveAppBar />
-            {boatNoLicence.map((obj) => (
+            {sunsetList.map((obj) => (
               <a onClick={() => sendProp(obj)}>
                  <ActionAreaCard {...obj}/>
               </a>
