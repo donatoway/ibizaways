@@ -11,6 +11,8 @@ import {Whatsapp} from "@/components/whatsapp"
 const jetski = {name: "JETSKI TOUR", picture: "/Jetski/jetski-conta/jetskiConta0.png"}
 const  boatNoLicence = {name :"BOAT NO LICENCE", picture: "/Boat-no-licence/Astec/Astec400.png"}
 const snorkeling = {name : "SNORKELING EXCURSIONS", picture: "/snorkeling/snorkeling1.png" }
+const snorkelingArena = {name : "SNORKEL TOUR OF COVES AND CAVES IN IBIZA", picture: "/EscursioneArena/escursioneArena.png" }
+const jetBoat = {name : "JET BOAT 360", picture: "/jetBoat360/jetBoat1.jpg"}
 export default function  ()
 {
     const router = useRouter()
@@ -29,6 +31,15 @@ export default function  ()
             <a onClick={() => router.push("/Excursions/Excursions-snorkeling")}>
                 <ActionAreaCard {...snorkeling}/>
             </a>
+
+            <a onClick={() => router.push("/Excursions/Excursions-Arena-snorkeling")}>
+                <ActionAreaCard {...snorkelingArena}/>
+            </a>
+
+            <a onClick={() => router.push("/Excursions/Excursions-jetBoat")}>
+                <ActionAreaCard {...jetBoat}/>
+            </a>
+
             <Whatsapp></Whatsapp>
         </div>
 

@@ -14,11 +14,15 @@ const snorkDetail =
         priceOneP: 60,
         priceTwoP: 100,
         description: "Amazing 2 hours excursion visiting the most beautiful beaches of Ibiza, Cala Bassa and Cala Conta, villas of the rich and famous, scenic spots, cliffs, caves and other islands only accesible by boat like the kiss cave, s’illa des bosc and more around the natural park. Includes 1hour stop to swim and snorkel in one of the crystal water beaches and we provide snorkel gear, the exhilarating bladefish sea jet, free drinks and good music on board.",
-        picture: "/Jetski/jetski-puerta/jetski-puerta3.png",
-        images: [   "/Jetski/jetski-puerta/jetski-puerta.png",
-        "/Jetski/jetski-puerta/jetski-puerta2.png",
-        "/Jetski/jetski-puerta/jetski-puerta3.png",
-        "/Jetski/jetski-puerta/jetski-puerta4.png"
+        picture: "/snorkeling/snorkeling1.png",
+        images: [   "/snorkeling/snorkeling1.png",
+        "/snorkeling/snorkeling2.png",
+        "/snorkeling/snorkeling3.png",
+        "/snorkeling/snorkeling4.png",
+        "/snorkeling/snorkeling5.png",
+        "/snorkeling/snorkeling6.png",
+        "/snorkeling/snorkeling7.png",
+        "/snorkeling/snorkeling8.png",
     
     ],
 }

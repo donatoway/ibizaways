@@ -22,7 +22,7 @@ const sunsetList = [
         "/Sunset/trip70euro3.jpeg",
         "/Sunset/trip70euro4.jpeg",
     ],
-    }
+    },
 ]
 
 export default sunsetList;

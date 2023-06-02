@@ -51,6 +51,8 @@ export default function () {
   const router = useRouter();
     return (
       <div className="YatchPage">
+
+      <ResponsiveAppBar />
       <Image
         src="/mare.jpg"
         alt="esvedra"
@@ -58,11 +60,7 @@ export default function () {
         layout="fill"
         style={{opacity:"20%"}}
         />
-          
-            <ResponsiveAppBar />
-            
-            
-          
+   
             {YatchDetail.map((obj) => (
               <a onClick={() => sendProp(obj)}>
                  <ActionAreaCard {...obj}/>

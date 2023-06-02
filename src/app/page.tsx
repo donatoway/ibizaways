@@ -101,16 +101,20 @@ export default function Home() {
                 textAlign: "center",
                 color:"white",
                 position:"relative"}}>
-              Yatchs
-              <div style={{position:"relative"}}>
-                <a onClick={() => router.push(`Yatchs/Yatchs-index`)}>
-                <Slider  slides={slides}/>
-                </a>
-              </div>
-              Excursion
+             
+                <a onClick={() => router.push(`Yatchs/Yatchs-index`)}></a>
+                  <h1>Yatchs</h1>
+                  <Slider  slides={slides}/>
+                <a/>
+              <a onClick={() => router.push(`Excursions/Excursions-index`)}>
+              <h1>Excursions</h1>
                 <Slider slides={slides2}/>
-              Sunset Trip
+              </a>
+
+              <a onClick={() => router.push(`SunsetTrip/SunsetTrip-index`)}>
+              <h1>Sunset Trip</h1>
                 <Slider slides={slides3}/>
+              </a>
               <Social />
           </div>
 

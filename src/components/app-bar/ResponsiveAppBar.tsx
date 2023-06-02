@@ -52,7 +52,7 @@ function ResponsiveAppBar() {
                 alt="insta"
                 src="/ibizaways3.PNG"
                 width={80}
-                height={30}
+                height={55}
                 style={{margin:"6px", display:"flex"}}
                 onClick={() => router.push("/")}
                 />
@@ -79,6 +79,7 @@ function ResponsiveAppBar() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
+              style={{position:"relative", marginLeft:"60px"}}
               onClick={handleOpenNavMenu}
               color="inherit"
             >
