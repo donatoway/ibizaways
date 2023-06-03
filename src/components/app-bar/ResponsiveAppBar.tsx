@@ -50,7 +50,7 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <Image 
                 alt="insta"
-                src="/ibizaways3.PNG"
+                src="/ibizaway-log.png"
                 width={80}
                 height={55}
                 style={{margin:"6px", display:"flex"}}
