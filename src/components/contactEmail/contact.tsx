@@ -11,7 +11,7 @@ const Contact = () =>
     const [sent, setSent] = useState(true);
 
 
-    const sendEmail = async (e) => {
+    const sendEmail = async (e:any) => {
         e.preventDefault();
     
      await    emailjs.sendForm('service_po7mnzu', 'template_tb54mlb', form.current, 'SFiZplkl1iagvZrPo')

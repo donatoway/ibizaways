@@ -44,7 +44,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static"
-    style={{background: "rgb(82,177,205)",  background: "linear-gradient(90deg, rgba(82,177,205,1) 0%, rgba(150,255,249,1) 32%, rgba(128,217,238,0.5914959733893557) 82%)"
+    style={{ background: "linear-gradient(90deg, rgba(82,177,205,1) 0%, rgba(150,255,249,1) 32%, rgba(128,217,238,0.5914959733893557) 82%)"
     }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
