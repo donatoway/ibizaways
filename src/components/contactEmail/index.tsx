@@ -1,2 +1,2 @@
-import Contact from './contact.cjs'
+import Contact from './contact'
 export {Contact};

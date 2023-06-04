@@ -6,8 +6,6 @@
 
 import { ActionAreaCard } from "@/components/Card";
 import { ResponsiveAppBar } from "@/components/app-bar";
-import { Card } from "@mui/material";
-import { useRouter } from "next/router";
 import  Router  from "next/router";
 import boatNoLicence from "./boat-no-licence";
 import { Whatsapp } from "@/components/whatsapp";

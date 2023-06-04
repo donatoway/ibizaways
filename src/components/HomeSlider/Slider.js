@@ -1,5 +1,5 @@
 import { margin } from '@mui/system'
-import ImageSlider from './ImageSlider.cjs'
+import {ImageSlider} from './'
 import { top } from '@popperjs/core'
 
 const Slider = ({slides}) =>

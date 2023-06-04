@@ -1,4 +1,4 @@
-import ImageSlider from './ImageSlider.cjs'
+import ImageSlider from './ImageSlider'
 import Slider from './Slider'
 
 export {Slider}

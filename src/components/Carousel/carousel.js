@@ -1,4 +1,4 @@
-import { Carousel } from 'react-carousel-minimal';
+import  {Carousel}  from 'react-carousel-minimal';
 
 
 function arrlen(arr)

@@ -1,3 +1,3 @@
-import CarouselFun from "./carousel.cjs";
+import CarouselFun from "./carousel";
 export {CarouselFun}
  
