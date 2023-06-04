@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const ActionAreaCard = ({name, description, picture})  => {
+const ActionAreaCard = ({name, picture})  => {
   return (
     <Card  style={{margin:"25px", position: "relative", display:"inline-"}} >
       <CardActionArea>
