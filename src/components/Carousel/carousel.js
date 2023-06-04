@@ -16,15 +16,10 @@ const  CarouselFun = (obj) => {
 
     let newData  = [] ;
     let len = arrlen(obj.images)
-    console.log("-------")
-    console.log(obj.images)
-    console.log("-------")
 
     for (let index = 0; index < len; index++) {
       newData[index] = {image: obj.images[index], nome: "sundacer"};
     }
-    console.log();
-    console.log(newData);
     return newData;
   }
 
