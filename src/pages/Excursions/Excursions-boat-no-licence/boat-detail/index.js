@@ -5,6 +5,7 @@ import {ResponsiveAppBar} from "@/components/app-bar/"
 import { Contact } from "@/components/contactEmail";
 import { Whatsapp } from "@/components/whatsapp";
 
+
 export default function ()
 {
     const router = useRouter();
