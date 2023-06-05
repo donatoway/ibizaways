@@ -40,4 +40,6 @@ export default function ()
             <Whatsapp></Whatsapp>
         </div>
     )
-} 
+}
+
+export {jetskiList}
