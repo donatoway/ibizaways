@@ -23,7 +23,7 @@ export default function () {
       description,
       picture,
       images,
-      info
+      info: []
     }
 
     return (
