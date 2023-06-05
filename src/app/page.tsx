@@ -19,7 +19,6 @@ import { FaInstagramSquare } from "@react-icons/all-files/fa/FaInstagramSquare";
 import { Router } from 'next/router'
 import { Social } from '@/components/Social'
 import { Whatsapp } from '@/components/whatsapp'
-import jetskiList from "../pages/Excursions/Excursions-jetski/jetskiList";
 
 const slides = [
   {url: '/BaiaItalia/baia-italia_1.png', title: 'image1'},
