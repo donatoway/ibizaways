@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 import { useRouter } from "next/router";
 import {Contact} from "@/components/contactEmail"
 import {Whatsapp} from "@/components/whatsapp"
-// eslint-disable-next-line import/no-anonymous-default-export
 
 
 
