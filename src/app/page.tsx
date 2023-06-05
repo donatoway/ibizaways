@@ -89,7 +89,7 @@ export default function Home() {
   return (
     <div>      
       <ResponsiveAppBar />
-      <h1>ciao soono il nuono</h1>
+      <h1>buongiorno io sono luciano</h1>
 
           <div style={{width:"180px", height:"330px", display:"-ms-flexbox", position:"relative",left:"90px"}}>
             <Typewriters></Typewriters>
