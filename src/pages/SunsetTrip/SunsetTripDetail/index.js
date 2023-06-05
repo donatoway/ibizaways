@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/display-name */
 /* eslint-disable import/no-anonymous-default-export */
-import CarouselFun from "@/components/Carousel/carousel";
 import { useRouter } from "next/router"
 import {ResponsiveAppBar} from "@/components/app-bar/"
 import { Contact } from "@/components/contactEmail";
@@ -22,7 +21,6 @@ export default function ()
            <div>
               <ResponsiveAppBar />
                 <h1 style={{textAlign:"center"}}>{props.name}</h1>
-              <CarouselFun {...props} ></CarouselFun>
             </div>
 
             <div style={{

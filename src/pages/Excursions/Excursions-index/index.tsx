@@ -3,9 +3,9 @@
 
 import ActionAreaCard from "@/components/Card/CardClick";
 import { ResponsiveAppBar } from "@/components/app-bar";
-import { Router, useRouter } from "next/router";
-import jetskiList from "../Excursions-jetski/jetskiList";
+import { useRouter } from "next/router";
 import {Whatsapp} from "@/components/whatsapp"
+import { a } from "react-spring";
 /* eslint-disable import/no-anonymous-default-export */
 
 const jetski = {name: "JETSKI TOUR", picture: "/Jetski/jetski-conta/jetskiConta0.png"}

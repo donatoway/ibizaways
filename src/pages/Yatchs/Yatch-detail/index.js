@@ -3,10 +3,8 @@
 import { ActionAreaCard } from "@/components/Card";
 import { ResponsiveAppBar } from "@/components/app-bar";
 import Image from "next/image";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect } from 'react';
 import { useRouter } from "next/router";
-import {CarouselFun} from "@/components/Carousel"
 import {Contact} from "@/components/contactEmail"
 import {Whatsapp} from "@/components/whatsapp"
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -34,7 +32,6 @@ export default function () {
             <div>
               <ResponsiveAppBar />
                 <h1 style={{textAlign:"center"}}>{props.name}</h1>
-              <CarouselFun {...props} ></CarouselFun>
             </div>
 
         {
