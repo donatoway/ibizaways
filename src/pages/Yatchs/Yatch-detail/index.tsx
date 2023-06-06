@@ -248,7 +248,7 @@ export default async function  ()
             
         
         {
-          prop.info.map((p) => 
+          prop.images.map((p) => 
           (
             // eslint-disable-next-line react/jsx-key
             <div  style={{display:"flow", marginTop:"20%", textAlign:"center", width:"100%", height:"100%"}}>
