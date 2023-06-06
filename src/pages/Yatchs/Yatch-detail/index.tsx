@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable react/display-name */
 import { ActionAreaCard } from "@/components/Card";
@@ -251,7 +252,7 @@ export default async function  ()
          
             // eslint-disable-next-line react/jsx-key
             <div  style={{display:"flow", marginTop:"20%", textAlign:"center", width:"100%", height:"100%"}}>
-              <Image
+              <img
               src={prop.info.at(0)}
               width={'300'}
               height={'450'}
