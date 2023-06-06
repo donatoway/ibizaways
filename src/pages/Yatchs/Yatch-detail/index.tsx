@@ -248,16 +248,14 @@ export default async function  ()
             </div>
             
       
-      
-            <div  style={{display:"flow", marginTop:"20%", textAlign:"center", width:"100%", height:"100%"}}>
-              <img
-              src={prop.info.at(0)}
+              <Image
+              src="/Sunseeker102/Sunseeker102_1.png"
               width={'300'}
               height={'450'}
               alt="Picture of the author"
               style-={{display:"flex", width:"100%", height:"100%"}}
             />
-            </div>
+        
         <Whatsapp></Whatsapp>
       <Contact></Contact>
       </div>
