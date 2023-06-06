@@ -248,13 +248,15 @@ export default async function  ()
             </div>
             
       
-              <Image
+           { /*  <Image
               src="/Sunseeker102/Sunseeker102_1.png"
               width={'300'}
               height={'450'}
               alt="Picture of the author"
               style-={{display:"flex", width:"100%", height:"100%"}}
             />
+            */
+           }
         
         <Whatsapp></Whatsapp>
       <Contact></Contact>
