@@ -248,21 +248,18 @@ export default async function  ()
             
         
         {
-          prop.images.map((p) => 
-          (
+         
             // eslint-disable-next-line react/jsx-key
             <div  style={{display:"flow", marginTop:"20%", textAlign:"center", width:"100%", height:"100%"}}>
               <Image
-              src={p}
+              src={prop.info.at(0)}
               width={'300'}
               height={'450'}
               alt="Picture of the author"
               style={{display:"flex", width:"100%", height:"100%"}}
             />
-             
             </div>
-
-          ))
+          
           }
         <Whatsapp></Whatsapp>
       <Contact></Contact>
