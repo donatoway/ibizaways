@@ -255,7 +255,7 @@ export default async function  ()
               width={'300'}
               height={'450'}
               alt="Picture of the author"
-              style={{display:"flex", width:"100%", height:"100%"}}
+              style-={{display:"flex", width:"100%", height:"100%"}}
             />
             </div>
         <Whatsapp></Whatsapp>
