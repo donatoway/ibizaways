@@ -247,10 +247,8 @@ export default async function  ()
                 <h1 style={{textAlign:"center"}}>{prop.name}</h1>
             </div>
             
-        
-        {
-         
-            // eslint-disable-next-line react/jsx-key
+      
+      
             <div  style={{display:"flow", marginTop:"20%", textAlign:"center", width:"100%", height:"100%"}}>
               <img
               src={prop.info.at(0)}
@@ -260,8 +258,6 @@ export default async function  ()
               style={{display:"flex", width:"100%", height:"100%"}}
             />
             </div>
-          
-          }
         <Whatsapp></Whatsapp>
       <Contact></Contact>
       </div>
