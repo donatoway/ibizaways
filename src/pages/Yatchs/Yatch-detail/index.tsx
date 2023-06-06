@@ -8,6 +8,13 @@ import { useRouter } from "next/router";
 import {Contact} from "@/components/contactEmail"
 import {Whatsapp} from "@/components/whatsapp"
 
+type i = {
+  name: string,
+  description: string,
+  picture: string,
+  images: string[],
+  info : string[]
+}
 
 
 export default function  () 
@@ -17,24 +24,25 @@ export default function  ()
       query : {name, description, picture, images, info}
     } = router;
    
-    const props = 
+    const prop : i = 
     {
-      name,
-      description,
-      picture,
-      images,
-      info
+      name: name as string,
+      description: description as string,
+      picture: picture as string,
+      images: images as string[],
+      info: info as string[]
+
     }
 
     return (
       <div>
             <div>
               <ResponsiveAppBar />
-                <h1 style={{textAlign:"center"}}>{props.name}</h1>
+                <h1 style={{textAlign:"center"}}>{prop.name}</h1>
             </div>
 
         {
-          (info as string[]).map((p) => 
+          prop.info.map((p) => 
           (
             // eslint-disable-next-line react/jsx-key
             <div  style={{display:"flow", marginTop:"20%", textAlign:"center", width:"100%", height:"100%"}}>
