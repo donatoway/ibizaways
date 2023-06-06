@@ -10,7 +10,9 @@ import {Whatsapp} from "@/components/whatsapp"
 
 
 
-export default function () {
+const Detail = () => 
+{
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter()
     let i = 0;
     const {
@@ -57,3 +59,4 @@ export default function () {
       </div>
     ) 
   }
+  export default Detail;
