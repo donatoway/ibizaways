@@ -89,8 +89,6 @@ export default function Home() {
   return (
     <div>      
       <ResponsiveAppBar />
-      <h1>buongiorno io sono luciano, sono un bambino col babbo ortolano</h1>
-
           <div style={{width:"180px", height:"330px", display:"-ms-flexbox", position:"relative",left:"90px"}}>
             <Typewriters></Typewriters>
           </div>
@@ -124,7 +122,4 @@ export default function Home() {
   )
 }
 
-// CREARE LA YATCHS PAGE
-//CREARE WHATSAPP COMPONENT
-// CREARE LOGO
-// CREARE SEZIONE PER I BOAT PARTY
+// RIAGGIUNGERE IL CAROSELLO IN MODO FUNZIONANTE

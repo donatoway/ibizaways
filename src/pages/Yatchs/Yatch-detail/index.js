@@ -12,18 +12,19 @@ import {Whatsapp} from "@/components/whatsapp"
 
 export default function () {
     const router = useRouter()
-
+    let i = 0;
     const {
       query : {name, description, picture, images, info}
     } = router;
 
+   
     const props = 
     {
       name,
       description,
       picture,
       images,
-      info: []
+      info 
     }
 
     return (
@@ -34,11 +35,10 @@ export default function () {
             </div>
 
         {
-          props.info.map((p) => 
+          info.map((p) => 
           (
             // eslint-disable-next-line react/jsx-key
             <div  style={{display:"flow", marginTop:"20%", textAlign:"center", width:"100%", height:"100%"}}>
-            {
               <Image
               src={p}
               width={'300'}
@@ -46,11 +46,12 @@ export default function () {
               alt="Picture of the author"
               style={{display:"flex", width:"100%", height:"100%"}}
               
-            />}
+            />
              
             </div>
+
           ))
-        }
+          }
         <Whatsapp></Whatsapp>
       <Contact></Contact>
       </div>
