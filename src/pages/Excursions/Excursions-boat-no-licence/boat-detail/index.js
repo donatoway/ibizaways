@@ -4,7 +4,7 @@ import { useRouter } from "next/router"
 import {ResponsiveAppBar} from "@/components/app-bar/"
 import { Contact } from "@/components/contactEmail";
 import { Whatsapp } from "@/components/whatsapp";
-
+import  Image  from "next/image";
 
 export default function ()
 {
@@ -22,10 +22,15 @@ export default function ()
                 <h1 style={{textAlign:"center"}}>{props.name}</h1>
             </div>
 
-            <img src={props.images.at(0)} width={200} height={300}>
-            
-            </img>
-
+            <div>
+                <Image 
+                    src="/VanDutch/van-dutch_1.png"
+                    width={300}
+                    height={400}
+                    alt="miao"
+                    
+                    />
+            </div>
             <div style={{
                     background: "linear-gradient(90deg, rgba(82,177,205,0.6391150210084033) 0%, rgba(147,193,190,0.3197872899159664) 32%, rgba(198,222,227,0.20774247198879547) 76%)", marginTop:"120px", marginLeft:"80px",marginRight:"80px", textAlign:"center", border:"4%", fontSize:"14px", padding:"8%", borderRadius:"2%"}}>
                 <h2>PRICE HALF DAY: {props.halfDay},00€</h2>
