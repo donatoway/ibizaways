@@ -237,10 +237,11 @@ function sendProp (obj)
     pathname: '/Yatchs/Yatch-detail',
     query: {
       name: obj.name,
-      description: obj.description,
+    /*  description: obj.description,
       picture: obj.picture,
       images: obj.images,
       info: obj.info
+    */
     }
   })
 }

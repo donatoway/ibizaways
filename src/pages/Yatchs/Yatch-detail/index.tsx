@@ -1,10 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable import/no-anonymous-default-export */
-/* eslint-disable react/display-name */
-import { ActionAreaCard } from "@/components/Card";
 import { ResponsiveAppBar } from "@/components/app-bar";
-import Image from "next/image";
-import { useEffect } from 'react';
 import { useRouter } from "next/router";
 import {Contact} from "@/components/contactEmail"
 import {Whatsapp} from "@/components/whatsapp"
@@ -216,7 +211,7 @@ export default async function  ()
       query : {name}
     } = router;
    
-    let prop = { name: "SUNSEEKER PREDATOR 102",
+    const  prop = { name: "SUNSEEKER PREDATOR 102",
     description: "",
     picture:"/Sunseeker102/Sunseeker102_1.png",
     images: [
@@ -229,17 +224,6 @@ export default async function  ()
           ]
     }
 
-    async function findYatch ()
-    {
-      for (let index = 0; index < YatchDetail.length; index++) {
-        if (name == YatchDetail.at(index).name)
-        {
-          prop = YatchDetail.at(index);
-        }
-        
-      }
-    }
-    await findYatch();
     return (
       <div>
             <div>
