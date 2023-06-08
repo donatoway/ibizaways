@@ -1,16 +1,9 @@
 import { Carousel } from 'react-carousel-minimal'
 
 const CarouselFun  = ({props}) => {
- let data = [{image: "path", caption: "nome"}]
-
- function fillData()
- {
-    let index = 0;
-    props.images.map((obj) => {
-      data[index] = {image: obj, caption: props.name};
-      index++;
-    })
- }
+ let data = [{image: props.images[0], caption: props.name}, 
+              {image: props.images[1], caption: props.name},
+    ]
 
   const captionStyle = {
     fontSize: '2em',
@@ -21,7 +14,6 @@ const CarouselFun  = ({props}) => {
     fontWeight: 'bold',
   }
 
-  fillData();
   return (
     <div className="fun">
       <div style={{ textAlign: "center" }}>
