@@ -1,8 +1,8 @@
 import { Carousel } from 'react-carousel-minimal'
 
 const CarouselFun  = ({props}) => {
- let data = [{image: props.images[0], caption: props.name}, 
-              {image: props.images[1], caption: props.name},
+ let data = [{image: props.images.at(0), caption: props.name}, 
+              {image: props.images.at(1), caption: props.name},
     ]
 
   const captionStyle = {

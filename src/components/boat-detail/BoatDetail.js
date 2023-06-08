@@ -3,7 +3,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import  Image  from "next/image";
 import { CarouselFun } from "../CarouselFun";
-import { Carousel } from 'react-carousel-minimal'
 
   
 
