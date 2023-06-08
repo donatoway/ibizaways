@@ -1,10 +1,8 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/display-name */
 /* eslint-disable import/no-anonymous-default-export */
-import {ResponsiveAppBar} from "@/components/app-bar/"
-import { Contact } from "@/components/contactEmail";
-import { Whatsapp } from "@/components/whatsapp";
 import  Image  from "next/image";
+import { CarouselFun } from "../CarouselFun";
 
   
 
@@ -20,7 +18,7 @@ const BoatDetail = ({props}) =>
            
             <div>
                 {
-                    props.images.map((iter) => 
+                  /*  props.images.map((iter) => 
                     {
                         return (<Image 
                         src={iter}
@@ -31,6 +29,8 @@ const BoatDetail = ({props}) =>
                         />
                     )
                     })
+                    */
+                  <CarouselFun></CarouselFun>
                 }
             </div>
 
