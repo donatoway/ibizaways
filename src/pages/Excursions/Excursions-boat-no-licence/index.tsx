@@ -8,6 +8,8 @@ import { ActionAreaCard } from "@/components/Card";
 import { ResponsiveAppBar } from "@/components/app-bar";
 import  Router  from "next/router";
 import { Whatsapp } from "@/components/whatsapp";
+import { useState } from "react";
+import { BoatDetail } from "./boat-detail";
 /* eslint-disable import/no-anonymous-default-export */
 
 const boatNoLicence = [
@@ -74,26 +76,18 @@ const boatNoLicence = [
   },
 ]
 
-function sendProp (obj:any)
-{
-  Router.push({
-    pathname: `/Excursions/Excursions-boat-no-licence/boat-detail`,
-    query: {
-      name: obj.name,
-      description: obj.description,
-      picture: obj.picture,
-      images: obj.images,
-      halfDay: obj.halfDay,
-      fullDay: obj.fullDay,
-      halfDay_hours: obj.halfDay_hours,
-      fullDay_hours: obj.fullDay_hours
-    }
-  })
-}
+
 
 export default function ()
 {
-
+  const [showDetail, setShowDetail] = useState(false)
+  const [object, setObject] = useState({});
+  async function sendProp (obj:any)
+  {
+    console.log(obj);
+   await  setObject(obj);
+    setShowDetail(true);
+  }
     return (
         <div>
             <ResponsiveAppBar />
@@ -102,6 +96,10 @@ export default function ()
                  <ActionAreaCard {...obj}/>
               </a>
             ))}
+            {
+              showDetail == true && <BoatDetail props={object}></BoatDetail>
+
+            }
             <Whatsapp></Whatsapp>
         </div>
     )
