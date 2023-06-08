@@ -71,39 +71,19 @@ const boatNoLicence = [
     },
   ]
 
-let object = 
-{
-    key: 'Dipol',
-    name: "Dipol 450",
-    halfDay:  230,
-    fullDay:330,
-    halfDay_hours: "11:00-15:00 / 16:00-20:00",
-    fullDay_hours: "11: 00-20:00",
-    description: "Rent one of our boats as a couple or with friends and enjoy the best beaches and sunsets on the island of Ibiza. Enjoy the pleasure of navigating our crystal clear waters carrying the boat yourself. Our boats are very easy to handle. Motorboat of 4.50 meters with a 15cv motor very easy to drive, with all the necessary equipment such as anchor, bimini awning, fridge, mats, diving mask and all safety equipment. All included! Maximum 5 persons per boat!",
-    picture: "/Boat-no-licence/Dipol/Dipol2.png",
-    images: ["/Boat-no-licence/Dipol/Dipol2.png",
-    "/Boat-no-licence/Dipol/Dipol2.png",
-    "/Boat-no-licence/Dipol/Dipol4.png",
-    "/Boat-no-licence/Dipol/Dipol5.png",
-    "/Boat-no-licence/Dipol/Dipol6.png",
-    "/Boat-no-licence/Dipol/Dipol7.png",
-    "/Boat-no-licence/Dipol/Dipol8.png",
-    "/Boat-no-licence/Dipol/Dipol9.png",
-],
-}
+let imagesArray = ["/Boat-no-licence/Astec/Astec400_2.png",
+"/Boat-no-licence/Astec/Astec400.png"];
   
 
 export default function ()
 {
     const router = useRouter();
 
-    const {query: {key, name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} } = router;
+    const {query: { name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} } = router;
 
-    const props = {key, name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} ;
+    const props = {name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} ;
 
     
-    object = boatNoLicence.find((obj) => obj.name == name);
-    console.log(object);
     return (
         <div>
            <div>
@@ -123,9 +103,8 @@ export default function ()
     */}
             <div>
                 {
-                    object.images.map((o) => {
+                    imagesArray.map((o) => {
                        return ( 
-                       
                        <Image
                             src={o}
                             width={500}
