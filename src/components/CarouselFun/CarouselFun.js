@@ -1,7 +1,7 @@
-import { Carousel } from 'react-carousel-minimal';
+import { Carousel } from 'react-carousel-minimal'
 
 const CarouselFun  = ({props}) => {
- let data = [{}]
+ let data = [{image: "path", caption: "nome"}]
 
  function fillData()
  {
