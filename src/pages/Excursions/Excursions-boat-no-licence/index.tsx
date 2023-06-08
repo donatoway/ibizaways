@@ -9,7 +9,7 @@ import { ResponsiveAppBar } from "@/components/app-bar";
 import  Router  from "next/router";
 import { Whatsapp } from "@/components/whatsapp";
 import { useState } from "react";
-import { BoatDetail } from "./boat-detail";
+import { BoatDetail } from "@/components/boat-detail";
 /* eslint-disable import/no-anonymous-default-export */
 
 const boatNoLicence = [

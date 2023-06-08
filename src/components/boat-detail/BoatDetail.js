@@ -33,12 +33,6 @@ const BoatDetail = ({props}) =>
                     })
                 }
             </div>
-            
-            <div>
-                
-                
-                
-            </div>
 
             <div style={{
                     background: "linear-gradient(90deg, rgba(82,177,205,0.6391150210084033) 0%, rgba(147,193,190,0.3197872899159664) 32%, rgba(198,222,227,0.20774247198879547) 76%)", marginTop:"120px", marginLeft:"80px",marginRight:"80px", textAlign:"center", border:"4%", fontSize:"14px", padding:"8%", borderRadius:"2%"}}>
