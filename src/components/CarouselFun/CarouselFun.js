@@ -1,4 +1,4 @@
-import { Carousel } from 'react-carousel-minimal'
+import { Carousel } from 'react-carousel-minimal';
 
 const CarouselFun  = ({props}) => {
  const data = [{image: props.images.at(0), caption: props.name}, 
