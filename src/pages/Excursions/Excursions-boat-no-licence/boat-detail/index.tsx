@@ -97,9 +97,9 @@ export default function ()
 {
     const router = useRouter();
 
-    const {query: {name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} } = router;
+    const {query: {key, name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} } = router;
 
-    const props = {name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} ;
+    const props = {key, name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} ;
 
     
     object = boatNoLicence.find((obj) => obj.name == name);
