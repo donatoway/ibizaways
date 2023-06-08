@@ -30,7 +30,7 @@ const BoatDetail = ({props}) =>
                     )
                     })
                     */
-                  <CarouselFun></CarouselFun>
+                  <CarouselFun props={props}></CarouselFun>
                 }
             </div>
 
