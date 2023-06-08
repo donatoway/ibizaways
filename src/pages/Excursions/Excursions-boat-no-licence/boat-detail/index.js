@@ -56,7 +56,7 @@ export default function ()
     */}
             <div>
                 {
-                    obj.images.map((o) => {
+                    props.images.map((o) => {
                        return ( 
                        
                        <Image
