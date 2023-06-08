@@ -85,12 +85,18 @@ export default async function ()
 
     async function getImages ()
     {
-            if (props.images)
-            {
-                for (let index = 0; index < images.length; index++) {
-                    imagesArray[index] = images[index];
-                }
+        let objArray = [""];
+            for (let index = 0; index < boatNoLicence.length; index++) {
+                if (boatNoLicence.at(index).name == props.name)
+                {
+                    objArray = boatNoLicence.at(index).images;
+                }    
             }
+        
+       for (let index = 0; index < objArray.length; index++) {
+            imagesArray[index] = objArray.at(index);
+       }
+
         return await imagesArray;
     }
 
