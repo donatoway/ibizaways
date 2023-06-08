@@ -75,7 +75,7 @@ let imagesArray = ["/Boat-no-licence/Astec/Astec400_2.png",
 "/Boat-no-licence/Astec/Astec400.png"];
   
 
-export default function ()
+export default async function ()
 {
     const router = useRouter();
 
@@ -83,7 +83,18 @@ export default function ()
 
     const props = {name, picture, halfDay, fullDay, description, images, halfDay_hours, fullDay_hours} ;
 
-    
+    async function getImages ()
+    {
+            if (props.images)
+            {
+                for (let index = 0; index < images.length; index++) {
+                    imagesArray[index] = images[index];
+                }
+            }
+        return await imagesArray;
+    }
+
+    await getImages();
     return (
         <div>
            <div>
