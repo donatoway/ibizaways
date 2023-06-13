@@ -7,6 +7,7 @@ import  {Contact}  from "@/components/contactEmail";
 import { List } from "@mui/material";
 import { Whatsapp } from "@/components/whatsapp";
 import Image from "next/image";
+import Carousel from "@/components/Carousel-react/Carousel";
 
 const snorkDetail = 
     {
@@ -47,6 +48,10 @@ export default function ()
            <div>
               <ResponsiveAppBar />
                 <h1 style={{textAlign:"center"}}>{snorkDetail.name}</h1>
+            </div>
+
+            <div>
+                <Carousel obj={snorkDetail}></Carousel>
             </div>
 
             <div style={{

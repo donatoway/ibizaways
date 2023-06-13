@@ -5,7 +5,7 @@ import {ResponsiveAppBar} from "@/components/app-bar/"
 import { Contact } from "@/components/contactEmail";
 import { List } from "@mui/material";
 import { Whatsapp } from "@/components/whatsapp";
-
+import Carousel from "@/components/Carousel-react/Carousel"
 const snorkDetail = 
     {
         key: 'snork',
@@ -36,7 +36,9 @@ export default function ()
               <ResponsiveAppBar />
                 <h1 style={{textAlign:"center"}}>{snorkDetail.name}</h1>
             </div>
-
+            <div>
+              <Carousel obj={snorkDetail}></Carousel>
+            </div>
             <div style={{
                     background: "linear-gradient(90deg, rgba(82,177,205,0.6391150210084033) 0%, rgba(147,193,190,0.3197872899159664) 32%, rgba(198,222,227,0.20774247198879547) 76%)", marginTop:"120px", marginLeft:"80px",marginRight:"80px", textAlign:"center", border:"4%", fontSize:"14px", padding:"8%", borderRadius:"1%"}}>
                 <h2>PRICE 1 PERSON : {snorkDetail.priceOneP},00€</h2>
