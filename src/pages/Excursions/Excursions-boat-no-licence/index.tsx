@@ -90,8 +90,8 @@ export default function ()
   {
     console.log(obj);
    await  setObject(obj);
-    setShowDetail(true);
-    await doClick();
+    await setShowDetail(true);
+    doClick();
   }
     return (
         <div>
@@ -109,7 +109,9 @@ export default function ()
                 </div>
 
             }
-             <Social />
+            <div style={{position:"relative",  textAlign: "center",}}>
+              <Social />
+            </div>
             <Whatsapp></Whatsapp>
             
         </div>

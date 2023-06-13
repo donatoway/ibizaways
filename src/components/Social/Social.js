@@ -26,7 +26,7 @@ const  Social = () => {
                 alt="insta"
                 src="/instagram2.png"
                 width={70}
-                height={55}
+                height={70}
                 style={{margin:"30px", display:"inline"}}
                 onClick={() => router.push("https://instagram.com/in_viaggio_con_donny?igshid=NTc4MTIwNjQ2YQ==")}
                 />
@@ -34,7 +34,7 @@ const  Social = () => {
                 alt="email"
                 src="/email2.png"
                 width={70}
-                height={55}
+                height={70}
                 style={{margin:"30px", display:"inline"}}
                 onClick={onEmailSelect}
                 />
