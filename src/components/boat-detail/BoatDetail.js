@@ -4,7 +4,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react';
 import  Image  from "next/image";
-import { CarouselFun } from "../CarouselFun";
 import { Slider } from "../HomeSlider";
 import Carousel from '@/components/Carousel-react/Carousel'
 import { title } from "process";
