@@ -1,12 +1,26 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/display-name */
 /* eslint-disable import/no-anonymous-default-export */
+import React from 'react';
 import  Image  from "next/image";
 import { CarouselFun } from "../CarouselFun";
 import { Slider } from "../HomeSlider";
+import Carousel from '@/components/Carousel-react/Carousel'
 import { title } from "process";
+import { Paper, Button } from '@mui/material'
 
   
+var items = [
+    {
+        name: "Random Name #1",
+        description: "Probably the most random thing you have ever seen!"
+    },
+    {
+        name: "Random Name #2",
+        description: "Hello World!"
+    }
+]
 
 const BoatDetail = ({props}) =>
 {
@@ -38,7 +52,7 @@ const BoatDetail = ({props}) =>
                     )
                     })
                     */
-                  <Slider slides={obj}></Slider>
+                    <Carousel obj={props}/>
                 }
             </div>
 

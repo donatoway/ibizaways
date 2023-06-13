@@ -28,6 +28,7 @@
     "react-carousel-minimal": "^1.4.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-material-ui-carousel": "^3.4.2",
     "react-responsive-carousel": "^3.2.23",
     "react-spring": "^9.7.1",
     "react-textarea-autosize": "^8.4.1",
