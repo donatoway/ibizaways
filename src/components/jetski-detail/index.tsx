@@ -1,2 +1,2 @@
-import jetskiDetail from './JetskiDetail'
-export {jetskiDetail};
+import JetskiDetail from './JetskiDetail'
+export {JetskiDetail};

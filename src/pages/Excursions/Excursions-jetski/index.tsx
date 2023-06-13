@@ -11,7 +11,7 @@ import {Whatsapp} from "@/components/whatsapp"
 import { useState, useRef } from "react";
 import { BoatDetail } from "@/components/boat-detail";
 import Social from "@/components/Social/Social";
-import  JetskiDetail  from "@/components/jetski-detail/jetskiDetail";
+import  {JetskiDetail}  from "@/components/jetski-detail/"
 /* eslint-disable import/no-anonymous-default-export */
 
 const jetskiList = [
