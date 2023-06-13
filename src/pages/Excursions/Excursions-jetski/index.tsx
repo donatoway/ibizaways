@@ -8,6 +8,10 @@ import { Card } from "@mui/material";
 import { useRouter } from "next/router";
 import  Router  from "next/router";
 import {Whatsapp} from "@/components/whatsapp"
+import { useState, useRef } from "react";
+import { BoatDetail } from "@/components/boat-detail";
+import Social from "@/components/Social/Social";
+import  JetskiDetail  from "@/components/jetski-detail/jetskiDetail";
 /* eslint-disable import/no-anonymous-default-export */
 
 const jetskiList = [
@@ -63,23 +67,24 @@ const jetskiList = [
   },
 ]
 
-function sendProp (obj:any)
-{
-  Router.push({
-    pathname: `/Excursions/Excursions-jetski/jetski-detail`,
-    query: {
-      name: obj.name,
-      description: obj.description,
-      picture: obj.picture,
-      images: obj.images,
-      priceHighSeason: obj.priceHighSeason,
-      priceLowSeason: obj.priceLowSeason,
-    }
-  })
-}
+
+
+
 
 export default function ()
 {
+  const [showDetail, setShowDetail] = useState(false)
+  const [object, setObject] = useState({});
+  const ref = useRef(null)
+  const doClick = () => ref.current?.scrollIntoView({behavior: 'smooth'});
+  
+  async function sendProp (obj:any)
+  {
+      console.log(obj);
+      await  setObject(obj);
+      await setShowDetail(true);
+      doClick();
+  }
 
     return (
         <div>
@@ -89,6 +94,18 @@ export default function ()
                  <ActionAreaCard {...obj}/>
               </a>
             ))}
+            {
+
+            showDetail == true &&
+            <div ref={ref}>
+              <JetskiDetail  props={object} />
+              </div>
+
+            }
+            <div style={{position:"relative",  textAlign: "center",}}>
+            <Social />
+            </div>
+            
             <Whatsapp></Whatsapp>
         </div>
     )
