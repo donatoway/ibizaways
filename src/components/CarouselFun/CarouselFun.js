@@ -1,55 +1,23 @@
-import { Carousel } from 'react-carousel-minimal';
-
-const CarouselFun  = ({props}) => {
- const data = [{image: props.images.at(0), caption: props.name}, 
-              {image: props.images.at(1), caption: props.name},
-    ]
-
-  const captionStyle = {
-    fontSize: '2em',
-    fontWeight: 'bold',
-  }
-  const slideNumberStyle = {
-    fontSize: '20px',
-    fontWeight: 'bold',
-  }
+/* eslint-disable @next/next/no-sync-scripts */
+import "./style.css"
+import './script'
+const CarouselFun = () =>
+{
 
   return (
-    <div className="fun">
-      <div style={{ textAlign: "center" }}>
-        <h2>React Carousel Minimal</h2>
-        <p>Easy to use, responsive and customizable carousel component for React Projects.</p>
-        <div style={{
-          padding: "0 20px"
-        }}>
-          <Carousel
-            data={data}
-            time={2000}
-            width="850px"
-            height="500px"
-            captionStyle={captionStyle}
-            radius="10px"
-            slideNumber={true}
-            slideNumberStyle={slideNumberStyle}
-            captionPosition="bottom"
-            automatic={true}
-            dots={true}
-            pauseIconColor="white"
-            pauseIconSize="40px"
-            slideBackgroundColor="darkgrey"
-            slideImageFit="cover"
-            thumbnails={true}
-            thumbnailWidth="100px"
-            style={{
-              textAlign: "center",
-              maxWidth: "850px",
-              maxHeight: "500px",
-              margin: "40px auto",
-            }}
-          />
+    <div className="bodyCarousel">
+    <div className="gallery">
+        <div className="gallery-container">
+          <img class="gallery-item gallery-item-1" src="/Sundacer320/Sundacer320_2.jpg" data-index="1"></img>
+          <img class="gallery-item gallery-item-2" src="/Sundacer320/Sundacer320_3.jpg" data-index="2"></img>
+          <img class="gallery-item gallery-item-3" src="/Sundacer320/Sundacer320_4.jpg" data-index="3"></img>
+          <img class="gallery-item gallery-item-4" src="/Sundacer320/Sundacer320_5.jpg" data-index="4"></img>
+          <img class="gallery-item gallery-item-5" src="/Sundacer320/Sundacer320_5.jpg" data-index="5"></img>
         </div>
-      </div>
+        <div className="gallery-controls"></div>
     </div>
-  );
+    <script src="script.js"></script>
+    </div>
+  )
 }
 export default CarouselFun;

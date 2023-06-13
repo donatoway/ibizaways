@@ -3,12 +3,20 @@
 /* eslint-disable import/no-anonymous-default-export */
 import  Image  from "next/image";
 import { CarouselFun } from "../CarouselFun";
+import { Slider } from "../HomeSlider";
+import { title } from "process";
 
   
 
 const BoatDetail = ({props}) =>
 {
-    console.log(props);
+
+    let obj = [];
+
+    props.images.map((p) => {
+        obj.push({url: p, title: "done"})
+    })
+
     return (
         <div>
            <div>
@@ -30,7 +38,7 @@ const BoatDetail = ({props}) =>
                     )
                     })
                     */
-                  <CarouselFun props={props}></CarouselFun>
+                  <Slider slides={obj}></Slider>
                 }
             </div>
 
