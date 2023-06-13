@@ -52,7 +52,7 @@ function ResponsiveAppBar() {
                 alt="insta"
                 src="/ibizaway-log.png"
                 width={80}
-                height={55}
+                height={70}
                 style={{margin:"6px", display:"flex"}}
                 onClick={() => router.push("/")}
                 />

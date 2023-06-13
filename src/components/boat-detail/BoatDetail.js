@@ -14,12 +14,6 @@ import { Paper, Button } from '@mui/material'
 const BoatDetail = ({props}) =>
 {
 
-    let obj = [];
-
-    props.images.map((p) => {
-        obj.push({url: p, title: "done"})
-    })
-
     return (
         <div>
            <div>
