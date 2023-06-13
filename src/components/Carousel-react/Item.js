@@ -3,11 +3,11 @@ import { Image } from 'next/image';
 function Item({item})
 {
     return (
-        <Paper>
+        <Paper style={{alignContent:"center"}}>
             <img src={item} 
                     alt="a"
                     width="100%"
-                    height="315px"
+                    height="100%"
                     style={{flexDirection:"column", display:"flex"}}
             ></img>
         </Paper>

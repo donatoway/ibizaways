@@ -8,8 +8,9 @@ import { ActionAreaCard } from "@/components/Card";
 import { ResponsiveAppBar } from "@/components/app-bar";
 import  Router  from "next/router";
 import { Whatsapp } from "@/components/whatsapp";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { BoatDetail } from "@/components/boat-detail";
+import { Social } from "@/components/Social";
 /* eslint-disable import/no-anonymous-default-export */
 
 const boatNoLicence = [
@@ -82,11 +83,15 @@ export default function ()
 {
   const [showDetail, setShowDetail] = useState(false)
   const [object, setObject] = useState({});
+  const ref = useRef(null)
+  const doClick = () => ref.current?.scrollIntoView({behavior: 'smooth'});
+  
   async function sendProp (obj:any)
   {
     console.log(obj);
    await  setObject(obj);
     setShowDetail(true);
+    await doClick();
   }
     return (
         <div>
@@ -97,10 +102,16 @@ export default function ()
               </a>
             ))}
             {
-              showDetail == true && <BoatDetail props={object}></BoatDetail>
+
+              showDetail == true &&
+              <div ref={ref}>
+                <BoatDetail  props={object}></BoatDetail>
+                </div>
 
             }
+             <Social />
             <Whatsapp></Whatsapp>
+            
         </div>
     )
 }

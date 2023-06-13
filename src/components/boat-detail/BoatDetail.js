@@ -10,17 +10,6 @@ import Carousel from '@/components/Carousel-react/Carousel'
 import { title } from "process";
 import { Paper, Button } from '@mui/material'
 
-  
-var items = [
-    {
-        name: "Random Name #1",
-        description: "Probably the most random thing you have ever seen!"
-    },
-    {
-        name: "Random Name #2",
-        description: "Hello World!"
-    }
-]
 
 const BoatDetail = ({props}) =>
 {
@@ -40,18 +29,6 @@ const BoatDetail = ({props}) =>
            
             <div>
                 {
-                  /*  props.images.map((iter) => 
-                    {
-                        return (<Image 
-                        src={iter}
-                        width={300}
-                        height={400}
-                        alt="miao"
-                        
-                        />
-                    )
-                    })
-                    */
                     <Carousel obj={props}/>
                 }
             </div>
