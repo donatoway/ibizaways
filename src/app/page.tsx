@@ -99,6 +99,11 @@ export default function Home() {
                 textAlign: "center",
                 color:"white",
                 position:"relative"}}>
+
+              <a onClick={() => router.push(`Yatchs`)}>
+              <h1>Yatchs</h1>
+                <Slider slides={slides}/>
+              </a>
               <a onClick={() => router.push(`Excursions/Excursions-index`)}>
               <h1>Excursions</h1>
                 <Slider slides={slides2}/>
