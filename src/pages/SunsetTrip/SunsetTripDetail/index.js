@@ -6,7 +6,7 @@ import {ResponsiveAppBar} from "@/components/app-bar/"
 import { Contact } from "@/components/contactEmail";
 import { Whatsapp } from "@/components/whatsapp";
 import { List } from "@mui/material";
-
+import {Social} from "@/components/Social"
 const sunsetList = [
     {
         key: 'Sunset Tour',
@@ -70,6 +70,9 @@ export default function ()
 
             <div>
                 <Contact></Contact>
+            </div>
+            <div style={{position:"relative",  textAlign: "center",}}>
+                <Social />
             </div>
             <Whatsapp></Whatsapp>
         </div>

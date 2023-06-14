@@ -20,7 +20,7 @@ import { useRouter } from 'next/navigation';
 import { BorderBottom, Margin } from '@mui/icons-material';
 import Icon from '@mui/material/Icon';
 
-const pages = [ {name:'Sunset Trip', link: 'SunsetTrip'}, {name:'Excursions', link: 'Excursions'}];
+const pages = [ {name:'Sunset Trip', link: 'SunsetTrip'},{name:'Yatchs', link: 'Yatchs'}, {name:'Excursions', link: 'Excursions'}];
 
 function ResponsiveAppBar() {
   const router = useRouter();

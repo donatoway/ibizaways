@@ -89,7 +89,7 @@ export default function Home() {
   return (
     <div>      
       <ResponsiveAppBar />
-          <div style={{width:"180px", height:"330px", display:"-ms-flexbox", position:"relative",left:"90px"}}>
+          <div style={{ height:"330px",position:"relative", textAlign:"center", margin:"35px"}}>
             <Typewriters></Typewriters>
           </div>
               
@@ -100,7 +100,7 @@ export default function Home() {
                 color:"white",
                 position:"relative"}}>
 
-              <a onClick={() => router.push(`Yatchs`)}>
+              <a onClick={() => router.push(`Yatchs/Yatchs-index`)}>
               <h1>Yatchs</h1>
                 <Slider slides={slides}/>
               </a>

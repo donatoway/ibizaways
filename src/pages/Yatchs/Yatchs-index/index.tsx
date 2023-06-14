@@ -12,6 +12,7 @@ import {Contact } from "@/components/contactEmail"
 import {Whatsapp} from "@/components/whatsapp"
 import { useRef, useState } from "react";
 import {YatchsDetails} from "@/components/yatchs-details"
+import { Social } from "@/components/Social";
 // eslint-disable-next-line import/no-anonymous-default-export
 /*
 const YatchDetail = [{
@@ -270,8 +271,12 @@ export default function () {
 
         }
        
-        <Whatsapp></Whatsapp>
+        
        <Contact></Contact>
+       <div style={{position:"relative",  textAlign: "center",}}>
+            <Social />
+        </div>
+       <Whatsapp></Whatsapp>
       </div>
     ) 
   }

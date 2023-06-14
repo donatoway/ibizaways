@@ -36,10 +36,6 @@ const YatchsDetails = ({props}) =>
                     })
                 }
             </div>
-
-            <div>
-                <Contact></Contact>
-            </div>
             <Whatsapp></Whatsapp>
         </div>
     )
