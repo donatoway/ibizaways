@@ -73,7 +73,7 @@ function ResponsiveAppBar() {
           >
           </Typography>
 
-          <Box sx={{flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent:"center", alignItems:"center"}}>
             <IconButton
               size="large"
               aria-label="account of current user"
