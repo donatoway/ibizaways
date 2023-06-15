@@ -8,7 +8,7 @@ import { List } from "@mui/material";
 import { Whatsapp } from "@/components/whatsapp";
 import Image from "next/image";
 import Carousel from "@/components/Carousel-react/Carousel";
-
+import { Social } from "@/components/Social"; 
 const snorkDetail = 
     {
         key: 'snork',
@@ -105,6 +105,9 @@ export default function ()
 
             <div>
                 <Contact></Contact>
+            </div>
+            <div style={{position:"relative",  textAlign: "center",}}>
+            <Social />
             </div>
             <Whatsapp></Whatsapp>
         </div>

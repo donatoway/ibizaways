@@ -6,6 +6,7 @@ import { ResponsiveAppBar } from "@/components/app-bar";
 import { useRouter } from "next/router";
 import {Whatsapp} from "@/components/whatsapp"
 import { a } from "react-spring";
+import { Social } from "@/components/Social";
 /* eslint-disable import/no-anonymous-default-export */
 
 const jetski = {name: "JETSKI TOUR", picture: "/Jetski/jetski-conta/jetskiConta0.png"}
@@ -42,7 +43,9 @@ export default function  ()
                 <ActionAreaCard {...jetBoat}/>
             </a>
             </div>
-
+            <div style={{position:"relative",  textAlign: "center",}}>
+            <Social />
+            </div>
             <Whatsapp></Whatsapp>
         </div>
 

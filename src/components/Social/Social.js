@@ -38,6 +38,7 @@ const  Social = () => {
                 style={{margin:"30px", display:"inline"}}
                 onClick={onEmailSelect}
                 />
+        <h3 style={{display: "inline", fontFamily:"cursive"}}>®Powered By Ibizaway</h3>
         {
               showEmail == true && 
                 <div ref={ref}>
