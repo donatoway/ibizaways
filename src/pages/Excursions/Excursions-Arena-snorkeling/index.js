@@ -45,10 +45,12 @@ export default function ()
 
     return (
         <div>
-           <div>
-              <ResponsiveAppBar />
-                <h1 style={{textAlign:"center"}}>{snorkDetail.name}</h1>
-            </div>
+         
+            <ResponsiveAppBar />
+            <div>
+
+            
+            <h1 style={{textAlign:"center"}}>{snorkDetail.name}</h1>
 
             <div>
                 <Carousel obj={snorkDetail}></Carousel>
@@ -75,22 +77,24 @@ export default function ()
                 <h1>TOUR DATAILS</h1>
                 <List>
                     <h2>1ST SWIM STOP AT CALA CONTA AREA</h2>
-                    <Image 
+                    <img 
                         alt="cala comte"
                         src="/EscursioneArena/escursioneArena3.png"
-                        width={350}
-                        height={280}
+                        width="100%"
+                        height="100%"
+                        style={{flexDirection:"column", display:"flex"}}
                     />
 
                     <p style={{marginBottom:"10px"}}>{snorkDetail.Comte}</p>
                     <p>{snorkDetail.Comte2}</p>
 
                     <h2>2D SWIM STOP AT CALA BASSA AREA</h2>
-                    <Image 
+                    <img 
                         alt= "cala bassa"
                         src="/EscursioneArena/escursioneArena4.png"
-                        width={350}
-                        height={280}
+                        width="100%"
+                        height="100%"
+                        style={{flexDirection:"column", display:"flex"}}
                     />
 
                     <p>{snorkDetail.CalaBassa}</p>
@@ -110,6 +114,7 @@ export default function ()
             <Social />
             </div>
             <Whatsapp></Whatsapp>
+            </div>
         </div>
     )
 }
