@@ -250,26 +250,20 @@ export default function () {
       <div className="YatchPage">
 
       <ResponsiveAppBar />
-      <Image
-        src="/mare.jpg"
-        alt="esvedra"
-        quality="100"
-        layout="fill"
-        style={{opacity:"20%"}}
-        />
-   
+      <div>
             {YatchDetail.map((obj) => (
               <a onClick={() => sendProp(obj)}>
                  <ActionAreaCard {...obj}/>
               </a>
             ))}
-        {
-            showDetail == true &&
-            <div ref={ref}>
-            <YatchsDetails  props={object} />
-            </div>
+            {
+                showDetail == true &&
+                <div ref={ref}>
+                <YatchsDetails  props={object} />
+                </div>
 
-        }
+            }
+        </div>
        
         
        <Contact></Contact>

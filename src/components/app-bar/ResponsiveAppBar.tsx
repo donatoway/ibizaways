@@ -20,7 +20,7 @@ import { useRouter } from 'next/navigation';
 import { BorderBottom, Margin } from '@mui/icons-material';
 import Icon from '@mui/material/Icon';
 
-const pages = [ {name:'Sunset Trip', link: 'SunsetTrip'},{name:'Yatchs', link: 'Yatchs'}, {name:'Excursions', link: 'Excursions'}];
+const pages = [ {name:'home', link:''}, {name:'Sunset Trip', link: 'SunsetTrip'},{name:'Yatchs', link: 'Yatchs'}, {name:'Excursions', link: 'Excursions'}];
 
 function ResponsiveAppBar() {
   const router = useRouter();
@@ -104,7 +104,7 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page.link} onClick={() => router.push(`/${page.link}/${page.link}-index`)}>
+                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page.link} onClick={() => (page.name != 'home') ? router.push(`/${page.link}/${page.link}-index`) : '/'}>
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
@@ -130,11 +130,12 @@ function ResponsiveAppBar() {
             
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            
             {pages.map((page) => (
               <Button
                 key={page.link}
-                onClick={() => router.push(`/${page.link}/${page.link}-index`)}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                onClick={() => (page.name != 'home') ? router.push(`/${page.link}/${page.link}-index`) : '/'}
+                sx={{  color: 'white', display: 'block' }}
               >
                 {page.name}
               </Button>

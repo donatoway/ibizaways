@@ -19,7 +19,9 @@ export default function  ()
     return (
         <div>
             <ResponsiveAppBar />
+            <div>
 
+            
             <a onClick={() => router.push("/Excursions/Excursions-jetski")}>
                 <ActionAreaCard {...jetski}/>
             </a>
@@ -39,6 +41,7 @@ export default function  ()
             <a onClick={() => router.push("/Excursions/Excursions-jetBoat")}>
                 <ActionAreaCard {...jetBoat}/>
             </a>
+            </div>
 
             <Whatsapp></Whatsapp>
         </div>
