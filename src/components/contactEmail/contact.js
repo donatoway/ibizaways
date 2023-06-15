@@ -57,7 +57,7 @@ const Contact = () =>
             <textarea name="message" style={{width:"100%", height:"150px"}}/>
             
             
-            <Button type="submit"  style={{margin:"20px", marginLeft:"50px",width:"180px", height:"40px", display:"inline-flex" }} variant="contained">
+            <Button type="submit"  style={{/*margin:"20px", marginLeft:"50px",width:"180px", height:"40px", display:"inline-flex" */margin:"30px"}} variant="contained">
                 Send
             </Button>
             </form>
