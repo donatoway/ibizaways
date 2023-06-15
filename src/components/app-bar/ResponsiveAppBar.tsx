@@ -104,7 +104,7 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page.link} onClick={() => (page.name != 'home') ? router.push(`/${page.link}/${page.link}-index`) : '/'}>
+                <MenuItem style={{backgroundColor: "#F0FFFF"}} key={page.link} onClick={() => (page.name != 'home') ? router.push(`/${page.link}/${page.link}-index`) : router.push('/')}>
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
@@ -134,7 +134,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page.link}
-                onClick={() => (page.name != 'home') ? router.push(`/${page.link}/${page.link}-index`) : '/'}
+                onClick={() => (page.name != 'home') ? router.push(`/${page.link}/${page.link}-index`) : router.push('/')}
                 sx={{  color: 'white', display: 'block' }}
               >
                 {page.name}
