@@ -154,14 +154,14 @@ const YatchDetail = [{
 {
   name: "v58 Princess",
   description: "",
-  picture:"/v58Princess/v58princess.png",
+  picture:"/V58Princess/v58princess.png",
   images: [
-    "/v58Princess/v58princess_2.png",
-    "/v58Princess/v58princess_3.png",
-    "/v58Princess/v58princess_4.png",
-    "/v58Princess/v58princess_5.png",
-    "/v58Princess/v58princess_6.png",],
-  info: [ "/v58Princess/v58princessInfo.png",, "/hoursInfo.png"
+    "/V58Princess/v58princess_2.png",
+    "/V58Princess/v58princess_3.png",
+    "/V58Princess/v58princess_4.png",
+    "/V58Princess/v58princess_5.png",
+    "/V58Princess/v58princess_6.png",],
+  info: [ "/v58Princess/v58princessInfo.png", "/hoursInfo.png"
         ]
 },
 {
