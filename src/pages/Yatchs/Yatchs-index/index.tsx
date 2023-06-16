@@ -161,7 +161,7 @@ const YatchDetail = [{
     "/V58Princess/v58princess_4.png",
     "/V58Princess/v58princess_5.png",
     "/V58Princess/v58princess_6.png",],
-  info: [ "/v58Princess/v58princessInfo.png", "/hoursInfo.png"
+  info: [ "/V58Princess/v58princessInfo.png", "/hoursInfo.png"
         ]
 },
 {
